@@ -1,0 +1,14 @@
+<view class="section">
+  <view class="flex-wrp" style="flex-direction:row;">
+        <scroll-view scroll-y="true" class="flex-item provice">
+            <block wx:for="{{provicedatas}}">
+              <view class="item {{index==0?'checked':''}}" bindtap="onselprovice" data-proid="{{item.value}}" data-proname="{{item.text}}">{{item.text}}</view>
+            </block>  
+        </scroll-view>
+        <scroll-view scroll-y="true" class="flex-item city">
+            <block wx:for="{{citydatas}}">
+              <view class="item" bindtap="gohospital" data-cityid="{{item.value}}" data-cityname="{{item.text}}">{{item.text}}</view>
+            </block>           
+        </scroll-view>
+   </view>
+</view>

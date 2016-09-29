@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/hospital/hospital",
+    "pages/index/index",
+    "pages/logs/logs",    
+    "pages/area/area",
+    "pages/department/department"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

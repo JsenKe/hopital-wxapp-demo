@@ -1,0 +1,16 @@
+<view class="section">
+    <view class="selarea" bindtap="goarea">
+      当前选择：{{provincename}} {{cityname}}
+    </view>
+    <scroll-view scroll-y="true" style="height: 100%;">
+        <block wx:for="{{hosdatas}}">
+            <view class="hosli" bindtap="godepartment" data-hosid="{{item.value}}">
+                <view class="hosimg"><image src="http://img.guahao.com/images/hsmall_UDe2957469.jpg"></image></view>
+                <view class="hosinfo">
+                    <view class="hosinfoname">{{item.text}}</view>
+                    <view class="hosinfodesc">医院简介</view>
+                </view>
+            </view>           
+        </block>   
+    </scroll-view>
+</view>

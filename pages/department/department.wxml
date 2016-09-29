@@ -1,0 +1,10 @@
+<view class="section" style="border-top: 1px solid #ebeaea;">
+    <scroll-view scroll-y="true" style="height: 100%;">
+        <block wx:for="{{deptdatas}}">
+            <view class="deptli">{{item.key}}</view>
+            <block wx:for="{{item.obj}}" wx:for-item="item1">            
+                <view data-deptid="{{item1.value}}" class="deptli1">{{item1.text}}</view>           
+            </block> 
+        </block>   
+    </scroll-view>
+</view>

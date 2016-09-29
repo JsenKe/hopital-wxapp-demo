@@ -1,0 +1,13 @@
+.deptli{ height: 40px; line-height: 40px; padding-left: 15px; border-bottom: 1px solid #ebeaea;}
+.deptli1{height: 40px; line-height: 40px; padding-left: 30px; border-bottom: 1px solid #ebeaea; position: relative;}
+.deptli1::after{
+    background: url(../../resources/arrow.png) 0 -1px no-repeat #fff;
+    background-size: contain;
+    height: 5px;
+    width: 9px;
+    transform: rotate(-90deg);
+    margin-top: -3px;
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 50%;}
